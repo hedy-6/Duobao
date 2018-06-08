@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>星云一元夺宝</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="common/materialize/css/materialize.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.min.css">
+</head>
+
+<body>
+
+
+    <div class="wrap grey lighten-2">
+        <nav>
+            <div class="nav-wrapper grey darken-4">
+                <a href="#" class="brand-logo">
+                    <i class=""><img src="images/logo.png" alt=""></i> 星云一元夺宝
+                </a>
+
+                <ul id="nav-mobile wallet_message" class="right hide-on-med-and-down">
+                    <li>
+                        <label for="">钱包地址:</label>
+                        <span id="address" style="padding-right: 20px;"></span>
+                    </li>
+                    <li>
+                        <label for="">钱包余额:</label>
+                        <span id="balance" style="padding-right: 20px;"></span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row ">
+                <ul class="">
+                    <li>
+                        <button class="btn waves-effect waves-light  grey darken-4" onclick="create()">创建项目</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row" id="houselist">
+
+            </div>
+        </div>
+    </div>
+    <div id="create_room" style="display: none;">
+        <div class="input-field col s12">
+            <input placeholder="请输入夺宝项目名称" id="house_name" type="text" class="validate">
+            <label for="house_name">项目名称</label>
+        </div>
+        <div class="input-field col s12">
+            <input id="number" placeholder="请输入参与夺宝人数，至少为2人，至多为100人" type="number" class="validate">
+            <label for="number">人数</label>
+        </div>
+        <div class="input-field col s12">
+            <input id="price" placeholder="请输入每人投注的金额" type="number" class="validate">
+            <label for="price">价格</label>
+        </div>
+    </div>
+
+
+
+    <script src="common/jquery-3.3.1.min.js"></script>
+    <script src="common/materialize/js/materialize.min.js"></script>
+    <script src="common/layer/layer.js"></script>
+
+    <script src="dist/nebulas.min.js"></script>
+    <script src="dist/nebPay.min.js"></script>
+    <script src="https://cdn.bootcss.com/bignumber.js/7.2.1/bignumber.js"></script>
+    <script src="js/option.js"></script>
+    <script src="dist/wallet.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
